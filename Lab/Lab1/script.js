@@ -54,8 +54,8 @@
 //         <tr>
 //           <td>${element.Nation}</td>
 //           <td>${element.Year}</td>
-//           <td>${element.Population}</td>`;  
-    
+//           <td>${element.Population}</td>  
+//         </tr>`;
 //       table.innerHTML += row;
 //     });
 //   });
@@ -71,10 +71,11 @@ fetch("https://65929f4fbb129707198fe18e.mockapi.io/tinhpv10/students")
     data.forEach(element => {                               //mảng kh có tên
       let row = `
         <tr>
-          <th>${element.id}</th>
+          <td>${element.id}</td>
           <td><img src="${element.avatar}"/></td>
           <td>${element.name}</td>
-          <td>${element.createdAt}</td>`;  
+          <td>${element.createdAt}</td>
+        </tr>`;  
     
       table.innerHTML += row;
     });
