@@ -81,3 +81,12 @@ fetch("https://65929f4fbb129707198fe18e.mockapi.io/tinhpv10/students")
     });
   });
 });
+
+//  for(let{Nation, Population , Year} of data){
+//   tbody +=`<tr>
+//   <td>${id}</td>
+//   <td>${avatar}</td>
+//   <td>${name}</td>
+//   <td>${createdAt}</td>
+//   </tr>`
+// }
