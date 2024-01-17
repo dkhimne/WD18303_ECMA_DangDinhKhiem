@@ -16,24 +16,66 @@
 "products": [
   { 
     "id": 1, 
-    "name": "Product 1", 
-    "postId": 1, 
+    "name": "Dầu gội Romano", 
+    "cate_id": 1, 
     "price": 9.99, 
-    "image": "product1.jpg" 
+    "image": "product1.png" 
   },
   { 
     "id": 2, 
-    "name": "Product 2", 
-    "postId": 2, 
+    "name": "Dầu gội X-men hương bạc hà", 
+    "cate_id": 2, 
     "price": 15.50, 
     "image": "product2.png" 
   },
   { 
     "id": 3, 
-    "name": "Product 3", 
-    "postId": 3, 
+    "name": "Dầu gội Sunsilk", 
+    "cate_id": 3, 
     "price": 22.99, 
-    "image": "product3.jpg" 
+    "image": "product3.png" 
+  },
+  { 
+    "id": 4, 
+    "name": "Dầu gội Romano mới", 
+    "cate_id": 1, 
+    "price": 9.99, 
+    "image": "product4.png" 
+  },
+  { 
+    "id": 5, 
+    "name": "Dầu gội X-men ", 
+    "cate_id": 2, 
+    "price": 15.50, 
+    "image": "product5.png" 
+  },
+  { 
+    "id": 6, 
+    "name": "Dầu gội Sunsilk mới", 
+    "cate_id": 3, 
+    "price": 22.99, 
+    "image": "product6.png" 
+  },
+  { 
+    "id": 7, 
+    "name": "Dầu gội Romano hương bưởi", 
+    "cate_id": 1, 
+    "price": 9.99, 
+    "image": "product7.png" 
+  },
+  { 
+    "id": 8, 
+    "name": "Dầu gội Romano hương chanh", 
+    "cate_id": 2, 
+    "price": 15.50, 
+    "image": "product8.png" 
+  },
+  { 
+    "id": 9, 
+    "name": "Dầu gội Sunsilk hương cam", 
+    "cate_id": 3, 
+    "price": 23.99, 
+    "image": "product9.png" 
   }
 ],
 "orders": [
