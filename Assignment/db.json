@@ -1,0 +1,111 @@
+{
+    "categories": [
+    { 
+        "id": 1, 
+        "name": "Fruit" 
+    },
+    { 
+        "id": 2, 
+        "name": "Vegatable" 
+    }
+     
+    ],
+    "products": [
+    { 
+        "id": 1, 
+        "name": "Nho",
+        "cate_id": 1, 
+        "price": 9.99, 
+        "image": "fruite-item-5.jpg" 
+    },
+    { 
+        "id": 2, 
+        "name": "Súp Lơ", 
+        "cate_id": 2, 
+        "price": 15.50, 
+        "image": "vagetable-item-2.jpg" 
+    },
+    { 
+        "id": 3, 
+        "name": "Cam", 
+        "cate_id": 1, 
+        "price": 22.99, 
+        "image": "fruite-item-1.jpg" 
+    },
+    { 
+        "id": 4, 
+        "name": "Ớt chuông",
+        "cate_id": 1, 
+        "price": 9.99, 
+        "image": "vagetable-item-4.jpg" 
+    },
+    { 
+        "id": 5, 
+        "name": "Chuoi", 
+        "cate_id": 1, 
+        "price": 15.50, 
+        "image": "fruite-item-3.jpg" 
+    },
+    { 
+        "id": 6, 
+        "name": "Cà chua", 
+        "cate_id": 2, 
+        "price": 22.99, 
+        "image": "vagetable-item-1.jpg" 
+    },
+    { 
+        "id": 7, 
+        "name": "Nho",
+        "cate_id": 1, 
+        "price": 9.99, 
+        "image": "fruite-item-5.jpg" 
+    },
+    { 
+        "id": 8, 
+        "name": "Chuoi", 
+        "cate_id": 1, 
+        "price": 15.50, 
+        "image": "fruite-item-3.jpg" 
+    },
+    { 
+        "id": 9, 
+        "name": "Cà chua", 
+        "cate_id": 2, 
+        "price": 22.99, 
+        "image": "vagetable-item-1.jpg" 
+    }
+    ],
+    "orders": [
+    { 
+        "id": "1", 
+        "customer_name": "John Doe", 
+        "customer_address": "123 Main St", 
+        "customer_email": "johndoe@example.com", 
+        "customer_phone_number": "555-555-5555", 
+        "created_date": "2024-01-16 15:29:00", 
+        "status": "pending" },
+    { 
+        "id": "2", 
+        "customer_name": "Jane Smith", 
+        "customer_address": "456 Elm St", 
+        "customer_email": "janesmith@example.com", 
+        "customer_phone_number": "555-555-1212", 
+        "created_date": "2024-01-15 10:00:00", 
+        "status": "completed" }
+    ],
+    "order_details": [
+    {
+         "order_id": "1", 
+         "product_id": "2", 
+         "quantity": 3, 
+         "unit_price": 15.50 
+    },
+    { 
+        "order_id": "2", 
+        "product_id": "1", 
+        "quantity": 1, 
+        "unit_price": 9.99 
+    }
+    ]
+  }
+  
