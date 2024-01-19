@@ -78,7 +78,7 @@
 //     console.log("10s");
 // },10000)
 
-const axios = require('axios');
+const axios = require('axios').default;
 
 const API_URL = "http://localhost:3000/";
 
@@ -91,9 +91,13 @@ let comment = {
     "body":"Bai viet qa hay",
     "postId":1    
 }
-
-axios.get(API_URL+ 'comments',comment).then(({data})=>console.log(data))
+//them moi
+axios.post(API_URL+ 'comments',comment).then(({data})=>console.log(data))
 
 axios.get(API_URL+ 'comments').then(({data})=>console.log(data))
 
-// lam delate , PUT/PATCH
+// sua 
+axios.put(API_URL+ 'comments/'+2,comment).then(({data})=>console.log(data))
+
+//xoa 
+axios.delete(API_URL+ 'comments/'+2).then(({data})=>console.log(data))
