@@ -1,22 +1,25 @@
-// Lấy dữ liệu sản phẩm từ file JSON
-const getProducts = () => {
-  const url = `db.json`;
-  return fetch(url)
-    .then(response => response.json())
-    .then(data => data);
-};
-
-// Hiển thị dữ liệu sản phẩm lên giao diện
-const renderProducts = (products) => {
-  const productContainer = document.querySelector(".products");
-  products.forEach(product => {
-    const productItem = document.createElement("div");
-    productItem.classList.add("product-item");
-
-    // Tạo phần tử ảnh sản phẩm
-    const productImage = document.createElement("img");
-    productImage.src = product.image;
-    productImage.classList.add("product-image");
-    productImage.alt = product.name;
+fetch("../db.json")
+  .then(response =>{
+    response.json().then(data => {
+    const products = data.products.filter(products => products.cate_name === "Fruit");
+    const html = document.querySelector("san-pham");
+      
+    products.forEach(product => {
+      html.innerHTML += `
+        <div class="rounded position-relative fruite-item">
+          <div class="fruite-img">
+           <a href="shop-detail.html"> <img src="${product.image}" class="img-fluid w-100 rounded-top" alt=""> <a>
+          </div>
+          <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">${product.cate_id}</div>
+          <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+            <h4>${product.name}</h4>
+            <div class="d-flex justify-content-between flex-lg-wrap">
+              <p class="text-dark fs-5 fw-bold mb-0">${product.price}</p>
+              <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
+            </div>
+          </div>
+        </div>
+      `;
+      });
+    });
   });
-}

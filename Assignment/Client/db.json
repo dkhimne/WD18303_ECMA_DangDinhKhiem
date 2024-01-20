@@ -15,64 +15,73 @@
         "id": 1, 
         "name": "Nho",
         "cate_id": 1, 
+        "cate_name":"Fruit",
         "price": 9.99, 
-        "image": "fruite-item-5.jpg" 
+        "image": "img/fruite-item-5.jpg" 
     },
     { 
         "id": 2, 
         "name": "Súp Lơ", 
         "cate_id": 2, 
+        "cate_name":"Vegatable",
         "price": 15.50, 
-        "image": "vagetable-item-2.jpg" 
+        "image": "img/vagetable-item-2.jpg" 
     },
     { 
         "id": 3, 
         "name": "Cam", 
         "cate_id": 1, 
+        "cate_name":"Fruit",
         "price": 22.99, 
-        "image": "fruite-item-1.jpg" 
+        "image": "img/fruite-item-1.jpg" 
     },
     { 
         "id": 4, 
         "name": "Ớt chuông",
         "cate_id": 1, 
+        "cate_name":"Vegatable",
         "price": 9.99, 
-        "image": "vagetable-item-4.jpg" 
+        "image": "img/vagetable-item-4.jpg" 
     },
     { 
         "id": 5, 
         "name": "Chuoi", 
         "cate_id": 1, 
+        "cate_name":"Fruit",
         "price": 15.50, 
-        "image": "fruite-item-3.jpg" 
+        "image": "img/fruite-item-3.jpg" 
     },
     { 
         "id": 6, 
         "name": "Cà chua", 
         "cate_id": 2, 
+        "cate_name":"Vegatable",
         "price": 22.99, 
-        "image": "vagetable-item-1.jpg" 
+        "image": "img/vagetable-item-1.jpg" 
     },
     { 
         "id": 7, 
         "name": "Nho",
         "cate_id": 1, 
+        "cate_name":"Fruit",
         "price": 9.99, 
-        "image": "fruite-item-5.jpg" 
+        "image": "img/fruite-item-5.jpg" 
     },
     { 
         "id": 8, 
         "name": "Chuoi", 
         "cate_id": 1, 
+        "cate_name":"Fruit",
         "price": 15.50, 
-        "image": "fruite-item-3.jpg" 
+        "image": "/img/fruite-item-3.jpg" 
     },
     { 
         "id": 9, 
         "name": "Cà chua", 
         "cate_id": 2, 
+        "cate_name":"Vegatable",
         "price": 22.99, 
-        "image": "vagetable-item-1.jpg" 
+        "image": "/img/vagetable-item-1.jpg" 
     }
     ],
     "orders": [
