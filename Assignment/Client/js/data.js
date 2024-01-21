@@ -16,7 +16,7 @@ fetch("db.json")
             <p>San pham huu co khong phan bon</p>
             <div class="d-flex justify-content-between flex-lg-wrap">
               <p class="text-dark fs-5 fw-bold mb-0">${product.price}</p>
-              <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
+              <a href="cart.html" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
             </div>
           </div>
         </div>
