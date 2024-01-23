@@ -17,7 +17,7 @@
         "cate_id": 1, 
         "cate_name":"Fruit",
         "price": 9.99, 
-        "image": "img/fruite-item-5.jpg" 
+        "image": "https://themewagon.github.io/fruitables/img/fruite-item-5.jpg" 
     },
     { 
         "id": 2, 
@@ -25,7 +25,7 @@
         "cate_id": 2, 
         "cate_name":"Vegetable",
         "price": 15.50, 
-        "image": "img/vegetable-item-2.jpg" 
+        "image": "https://themewagon.github.io/fruitables/img/vegetable-item-2.jpg" 
     },
     { 
         "id": 3, 
@@ -33,7 +33,7 @@
         "cate_id": 1, 
         "cate_name":"Fruit",
         "price": 22.99, 
-        "image": "img/fruite-item-1.jpg" 
+        "image": "https://themewagon.github.io/fruitables/img/fruite-item-1.jpg" 
     },
     { 
         "id": 4, 
@@ -41,7 +41,7 @@
         "cate_id": 1, 
         "cate_name":"Vegetable",
         "price": 9.99, 
-        "image": "img/vegetable-item-4.jpg" 
+        "image": "https://themewagon.github.io/fruitables/img/vegetable-item-4.jpg" 
     },
     { 
         "id": 5, 
@@ -49,7 +49,7 @@
         "cate_id": 1, 
         "cate_name":"Fruit",
         "price": 15.50, 
-        "image": "img/fruite-item-3.jpg" 
+        "image": "https://themewagon.github.io/fruitables/img/fruite-item-3.jpg" 
     },
     { 
         "id": 6, 
@@ -57,7 +57,7 @@
         "cate_id": 2, 
         "cate_name":"Vegetable",
         "price": 22.99, 
-        "image": "img/vegetable-item-1.jpg" 
+        "image": "https://themewagon.github.io/fruitables/img/vegetable-item-1.jpg" 
     },
     { 
         "id": 7, 
@@ -65,7 +65,7 @@
         "cate_id": 1, 
         "cate_name":"Fruit",
         "price": 9.99, 
-        "image": "img/fruite-item-5.jpg" 
+        "image": "https://themewagon.github.io/fruitables/img/fruite-item-5.jpg" 
     },
     { 
         "id": 8, 
@@ -73,7 +73,7 @@
         "cate_id": 1, 
         "cate_name":"Fruit",
         "price": 15.50, 
-        "image": "img/fruite-item-3.jpg" 
+        "image": "https://themewagon.github.io/fruitables/img/fruite-item-3.jpg" 
     },
     { 
         "id": 9, 
@@ -81,26 +81,28 @@
         "cate_id": 2, 
         "cate_name":"Vegetable",
         "price": 22.99, 
-        "image": "img/vegetable-item-1.jpg" 
+        "image": "https://themewagon.github.io/fruitables/img/vegetable-item-1.jpg" 
     }
     ],
     "orders": [
     { 
         "id": "1", 
-        "customer_name": "John Doe", 
-        "customer_address": "123 Main St", 
-        "customer_email": "johndoe@example.com", 
-        "customer_phone_number": "555-555-5555", 
+        "customer_name": "Dkhim", 
+        "customer_address": "Can Tho", 
+        "customer_email": "k@gmail.com", 
+        "customer_phone_number": "0123456789", 
         "created_date": "2024-01-16 15:29:00", 
-        "status": "pending" },
+        "status": "pending" 
+    },
     { 
         "id": "2", 
-        "customer_name": "Jane Smith", 
-        "customer_address": "456 Elm St", 
-        "customer_email": "janesmith@example.com", 
-        "customer_phone_number": "555-555-1212", 
+        "customer_name": "Dkhiem", 
+        "customer_address": "Bac Lieu", 
+        "customer_email": "kh@gmail.com", 
+        "customer_phone_number": "0987654321", 
         "created_date": "2024-01-15 10:00:00", 
-        "status": "completed" }
+        "status": "completed" 
+    }
     ],
     "order_details": [
     {
