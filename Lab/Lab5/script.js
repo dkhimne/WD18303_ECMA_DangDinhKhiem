@@ -43,57 +43,47 @@
 
 
 //Bai5
-// class BaseAPI{
-//     constructor(baseUrl){
-//         this.baseUrl= baseUrl;
-//     }
-//     get(endpoint){
-//        return fetch(`${this.baseUrl}/${endpoint}`)
-//        .then(response => response.json());
-//         }
-// }
+  import {     
+    Comment
+  } from './module/comments/index.js'
+  
+  let commentApi = new Comment('http://localhost:3000');
+  commentApi.getAll().then(comments => console.log('Tất cả commnet:', comments));
+  commentApi.getOne(1).then(comment => console.log('Comment với ID 1:', comment));
+  
+  //them
+  const caretedComment = { content: 'Bình luận mới nha mấy ní' };
+  commentApi.create(caretedComment).then(createdComment => console.log('Bình luận Đã tạo:', createdComment));
 
-// class Comment extends BaseAPI {
-//     constructor(baseUrl,apiCaller) {
-//       super(baseUrl)
-//       this.apiCaller = apiCaller;
-//     }
-  
-//     getAll() {
-//       return this.apiCaller.get('comments');
-//     }
-  
-//     getOne(commentId) {
-//       return this.apiCaller.get(`comments/${commentId}`);
-//     }
-//   }
-  
-//   class Post extends BaseAPI {
-//     constructor(baseUrl,apiCaller) {
-//       super(baseUrl)
-//       this.apiCaller = apiCaller;
-//     }
-  
-//     getAll() {
-//       return this.apiCaller.get('posts');
-//     }
-  
-//     getOne(postId) {
-//       return this.apiCaller.get(`posts/${postId}`);
-//     }
-//   }
-  
-//   let apiCaller = new BaseAPI('http://localhost:3000'); 
+  //xua
+  const updatedComment = { content: 'Bình luận Vừa được update' };
+  commentApi.update(1, updatedComment).then(updatedComment => console.log('Bình luận Đã cập nhật:', updatedComment));
 
-//   let commentApi = new Comment('http://localhost:3000',apiCaller);
-//   commentApi.getAll().then(comments => console.log('Tất cả commnet:', comments));
-//   commentApi.getOne(1).then(comment => console.log('Comment với ID 1:', comment));
+  //xoa
+  commentApi.delete(2).then(deletedComment => console.log('Comment đã xóa:', deletedComment));
+  
 
-//   let postApi = new Post('http://localhost:3000',apiCaller);
-//   postApi.getAll().then(posts => console.log('Tất cả bài viết:', posts));
-//   postApi.getOne(1).then(post => console.log('Bài viết với id là 1:', post));
 
-//Bài 1
+  import {
+    Post
+  } from './module/posts/index.js'
+
+  let postApi = new Post('http://localhost:3000');
+  postApi.getAll().then(posts => console.log('Tất cả bài viết:', posts));
+  postApi.getOne(1).then(post => console.log('Bài viết với id là 1:', post));
+
+//them
+const createdPost = { titel: 'Bài viết mới nha mấy ní' };
+postApi.create(createdPost).then(createdPost => console.log('Bài viết:', createdPost));
+
+//xua
+const updatedPost = { title: 'Bài viết Vừa được update' };
+postApi.update(1, updatedPost).then(updatedPost => console.log('Bài viết Đã cập nhật:', updatedPost));
+
+//xoa
+postApi.delete(2).then(deletedPost => console.log('Post đã xóa:', deletedPost));
+
+// Bài 1
 
 // Trong JavaScript, từ khóa this đại diện cho đối tượng hiện đang gọi hàm hoặc phương thức. 
 // Giá trị của this có thể thay đổi tùy thuộc vào ngữ cảnh mà hàm hoặc phương thức được gọi.
@@ -161,20 +151,20 @@
 //   clock.start();
   
 //Bài 4
-var person = {
-    firstname: "Khim",
-    lastname: "Dinh",
-    set lname(newlastname) {
-        this.lastname = newlastname;
-    },
-    set fname(newfirstname) {
-        this.firstname = newfirstname;
-    },
-    get fullName() {
-        return this.firstname + "~" + this.lastname;
-    }
-};
+// var person = {
+//     firstname: "Khim",
+//     lastname: "Dinh",
+//     set lname(newlastname) {
+//         this.lastname = newlastname;
+//     },
+//     set fname(newfirstname) {
+//         this.firstname = newfirstname;
+//     },
+//     get fullName() {
+//         return this.firstname + "~" + this.lastname;
+//     }
+// };
 
-person.lname = 'Home'; 
-person.fname = 'Go'; 
-console.log(person.fullName); 
+// person.lname = 'Home'; 
+// person.fname = 'Go'; 
+// console.log(person.fullName); 

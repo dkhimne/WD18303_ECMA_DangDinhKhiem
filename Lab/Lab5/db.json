@@ -1,17 +1,40 @@
 {
   "posts": [
     {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
+      "title": "Bài viết Vừa được update",
+      "id": "1"
+    },
+    {
+      "id": "1f60",
+      "titel": "Bài viết mới nha mấy ní"
+    },
+    {
+      "id": "5a7b",
+      "titel": "Bài viết mới nha mấy ní"
+    },
+    {
+      "id": "6535",
+      "titel": "Bài viết mới nha mấy ní"
     }
   ],
   "comments": [
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "content": "Bình luận Vừa được update",
+      "id": "1"
+    },
+    {
+      "id": "c7d0",
+      "content": "Bình luận mới nha mấy ní"
+    },
+    {
+      "id": "2f46",
+      "content": "Bình luận mới nha mấy ní"
+    },
+    {
+      "id": "6a34",
+      "content": "Bình luận mới nha mấy ní"
     }
+    
   ],
   "profile": {
     "name": "typicode"
