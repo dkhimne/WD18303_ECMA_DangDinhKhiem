@@ -26,31 +26,4 @@
 
 // new User;
 
-//bai 1
-import {
-    uppercaseString, 
-    lowercaseString,
-    subtract,
-    subtract2
-} from './module.js'
 
-const upperCaseString = uppercaseString("Về");
-console.log(upperCaseString);  
-
-const lowerCaseString = lowercaseString("Quê");
-console.log(lowerCaseString); 
-
-//Bai2
-import * as stringFunctions from './module.js';
-
-const an = stringFunctions.uppercaseString("Ăn");
-console.log(an);  
-
-const tet = stringFunctions.lowercaseString("Tết!");
-console.log(tet);  
-
-//Bai3
-console.log(subtract(2,1));
-
-//Bai4 
-console.log(subtract2(7,4));

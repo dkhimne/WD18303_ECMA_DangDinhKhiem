@@ -49,16 +49,10 @@ export const lowercaseString = (string) => {
   
   }
 
-//Bai 3
+//Bai 3 va 4
 
-function subtract(x,y){
+export default function subtract(x,y){
     return x - y;
 }
 
-export {subtract}
 
-// Bai 4 
-
-export function subtract2(x,y){
-    return  x + y;
-}
