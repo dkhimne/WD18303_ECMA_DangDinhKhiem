@@ -1,5 +1,6 @@
 //lisst product
-fetch("http://localhost:3000/products")
+function ListProduct(){
+    fetch("http://localhost:3000/products")
     .then((response) => {
         response.json().then((data) => {
             const products = data;
@@ -8,6 +9,7 @@ fetch("http://localhost:3000/products")
             products.forEach(product => {
                 html.innerHTML += `
                     <tr>
+                        <td>${product.id}</td>
                         <td class="py-1">
                             <img src="${product.image}" alt="image"  style="width: 100px;height: 100px;"/>
                         </td>
@@ -15,15 +17,16 @@ fetch("http://localhost:3000/products")
                         <td>${product.name}</td>
                         <td>${product.price}</td>
                         <td>
-                        <button type="button" class="btn btn-primary mt-3"  ">Edit </button>
-                        <button type="button" class="btn btn-danger mt-3"  ">Delete</button>
+                        <button type="button" class="btn btn-primary mt-3"  class="deleteButton" data-id="${product.id}" data-type="product">Edit </button>
+                        <button type="button" class="btn btn-danger mt-3"  class="editButton" data-id="${product.id}" data-type="product">Delete</button>
                         </td>
                     </tr>
                 `;
             });
         });
     });
-
+}
+ListProduct();
 
 //list cate
     fetch("http://localhost:3000/categories")
@@ -38,8 +41,8 @@ fetch("http://localhost:3000/products")
                         <td>${cate.id}</td>
                         <td>${cate.name}</td>
                         <td>
-                        <button type="button" class="btn btn-primary mt-3"  ">Edit </button>
-                        <button type="button" class="btn btn-danger mt-3"  ">Delete</button>
+                        <button type="button" class="btn btn-primary mt-3" class="deleteButton" data-id="${cate.id}" data-type="product"  >Edit </button>
+                        <button type="button" class="btn btn-danger mt-3"  class="editButton" data-id="${cate.id}" data-type="product">Delete</button>
                         </td>
                     </tr>
                 `;
@@ -64,6 +67,10 @@ fetch("http://localhost:3000/orders")
                         <td>${or.customer_phone_number}</td>
                         <td>${or.created_date}</td>
                         <td>${or.status}</td>
+                        <td>
+                        <button type="button" class="btn btn-primary mt-3"  ">Edit </button>
+                        <button type="button" class="btn btn-danger mt-3"  ">Delete</button>
+                        </td>
                     </tr>
                 `;
             });

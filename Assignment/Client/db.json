@@ -1,122 +1,130 @@
 {
-    "categories": [
-    { 
-        "id": 1, 
-        "name": "Fruit" 
-    },
-    { 
-        "id": 2, 
-        "name": "Vegetable" 
-    }
-     
-    ],
-    "products": [
-    { 
-        "id": 1, 
-        "name": "Nho",
-        "cate_id": 1, 
-        "cate_name":"Fruit",
-        "price": 9.99, 
-        "image": "https://themewagon.github.io/fruitables/img/fruite-item-5.jpg" 
-    },
-    { 
-        "id": 2, 
-        "name": "Súp Lơ", 
-        "cate_id": 2, 
-        "cate_name":"Vegetable",
-        "price": 15.50, 
-        "image": "https://themewagon.github.io/fruitables/img/vegetable-item-2.jpg" 
-    },
-    { 
-        "id": 3, 
-        "name": "Cam", 
-        "cate_id": 1, 
-        "cate_name":"Fruit",
-        "price": 22.99, 
-        "image": "https://themewagon.github.io/fruitables/img/fruite-item-1.jpg" 
-    },
-    { 
-        "id": 4, 
-        "name": "Ớt chuông",
-        "cate_id": 1, 
-        "cate_name":"Vegetable",
-        "price": 9.99, 
-        "image": "https://themewagon.github.io/fruitables/img/vegetable-item-4.jpg" 
-    },
-    { 
-        "id": 5, 
-        "name": "Chuối", 
-        "cate_id": 1, 
-        "cate_name":"Fruit",
-        "price": 15.50, 
-        "image": "https://themewagon.github.io/fruitables/img/fruite-item-3.jpg" 
-    },
-    { 
-        "id": 6, 
-        "name": "Cà chua", 
-        "cate_id": 2, 
-        "cate_name":"Vegetable",
-        "price": 22.99, 
-        "image": "https://themewagon.github.io/fruitables/img/vegetable-item-1.jpg" 
-    },
-    { 
-        "id": 7, 
-        "name": "Nho",
-        "cate_id": 1, 
-        "cate_name":"Fruit",
-        "price": 9.99, 
-        "image": "https://themewagon.github.io/fruitables/img/fruite-item-5.jpg" 
-    },
-    { 
-        "id": 8, 
-        "name": "Chuối", 
-        "cate_id": 1, 
-        "cate_name":"Fruit",
-        "price": 15.50, 
-        "image": "https://themewagon.github.io/fruitables/img/fruite-item-3.jpg" 
-    },
-    { 
-        "id": 9, 
-        "name": "Cà chua", 
-        "cate_id": 2, 
-        "cate_name":"Vegetable",
-        "price": 22.99, 
-        "image": "https://themewagon.github.io/fruitables/img/vegetable-item-1.jpg" 
-    }
-    ],
-    "orders": [
-    { 
-        "id": "1", 
-        "customer_name": "Dkhim", 
-        "customer_address": "Can Tho", 
-        "customer_email": "k@gmail.com", 
-        "customer_phone_number": "0123456789", 
-        "created_date": "2024-01-16 15:29:00", 
-        "status": "pending" 
-    },
-    { 
-        "id": "2", 
-        "customer_name": "Dkhiem", 
-        "customer_address": "Bac Lieu", 
-        "customer_email": "kh@gmail.com", 
-        "customer_phone_number": "0987654321", 
-        "created_date": "2024-01-15 10:00:00", 
-        "status": "completed" 
-    }
-    ],
-    "order_details": [
+  "categories": [
     {
-         "order_id": "1", 
-         "product_id": "2", 
-         "quantity": 3, 
-         "unit_price": 15.50 
+      "id": "2",
+      "name": "Vegetable"
     },
-    { 
-        "order_id": "2", 
-        "product_id": "1", 
-        "quantity": 1, 
-        "unit_price": 9.99 
+    {
+      "id": "3",
+      "name": "Áo thung"
+    },
+    {
+      "id": "4",
+      "name": "Đặng Đình Khiêm "
     }
-    ]
-  }
-  
+  ],
+  "products": [
+    {
+      "id": "2",
+      "name": "Súp Lơ",
+      "cate_id": 2,
+      "cate_name": "Vegetable",
+      "price": 15.5,
+      "image": "https://themewagon.github.io/fruitables/img/vegetable-item-2.jpg"
+    },
+    {
+      "id": "3",
+      "name": "Cam",
+      "cate_id": 1,
+      "cate_name": "Fruit",
+      "price": 22.99,
+      "image": "https://themewagon.github.io/fruitables/img/fruite-item-1.jpg"
+    },
+    {
+      "id": "4",
+      "name": "Ớt chuông",
+      "cate_id": 1,
+      "cate_name": "Vegetable",
+      "price": 9.99,
+      "image": "https://themewagon.github.io/fruitables/img/vegetable-item-4.jpg"
+    },
+    {
+      "id": "5",
+      "name": "Chuối",
+      "cate_id": 1,
+      "cate_name": "Fruit",
+      "price": 15.5,
+      "image": "https://themewagon.github.io/fruitables/img/fruite-item-3.jpg"
+    },
+    {
+      "id": "6",
+      "name": "Cà chua",
+      "cate_id": 2,
+      "cate_name": "Vegetable",
+      "price": 22.99,
+      "image": "https://themewagon.github.io/fruitables/img/vegetable-item-1.jpg"
+    },
+    {
+      "id": "7",
+      "name": "Nho",
+      "cate_id": 1,
+      "cate_name": "Fruit",
+      "price": 9.99,
+      "image": "https://themewagon.github.io/fruitables/img/fruite-item-5.jpg"
+    },
+    {
+      "id": "8",
+      "name": "",
+      "price": null,
+      "image": "assets/img/gallery/",
+      "categories": ""
+    },
+    {
+      "id": "9",
+      "name": "Đặng Đình Khiêm ",
+      "price": 800000,
+      "image": "assets/img/gallery/",
+      "categories": "1"
+    },
+    {
+      "id": "10",
+      "name": "Áo thun",
+      "price": 700000,
+      "image": "assets/img/gallery/",
+      "categories": "1"
+    },
+    {
+      "id": "11",
+      "name": "Đặng Đình Khiêm ",
+      "price": 500000,
+      "image": "assets/img/gallery/Ảnh chụp màn hình 2024-01-12 111306.png",
+      "categories": "1"
+    }
+  ],
+  "orders": [
+    {
+      "id": "1",
+      "customer_name": "Dkhim",
+      "customer_address": "Can Tho",
+      "customer_email": "k@gmail.com",
+      "customer_phone_number": "0123456789",
+      "created_date": "2024-01-16 15:29:00",
+      "status": "pending"
+    },
+    {
+      "id": "2",
+      "customer_name": "Dkhiem",
+      "customer_address": "Bac Lieu",
+      "customer_email": "kh@gmail.com",
+      "customer_phone_number": "0987654321",
+      "created_date": "2024-01-15 10:00:00",
+      "status": "completed"
+    }
+  ],
+  "order_details": [
+    {
+      "order_id": "1",
+      "product_id": "2",
+      "quantity": 3,
+      "unit_price": 15.5,
+      "id": "e916"
+    },
+    {
+      "order_id": "2",
+      "product_id": "1",
+      "quantity": 1,
+      "unit_price": 9.99,
+      "id": "890e"
+    }
+  ]
+}
