@@ -56,8 +56,8 @@ document.getElementById("addpro1").onclick = function () {
         id: (Number(lastId) + 1).toString(),
         name: name,
         price: price,
-        image: "assets/img/gallery/" + image.replace(/^.*[\\\/]/, ""),
-        categories: categories,
+        image: "../images/img/" + image.replace(/^.*[\\\/]/, ""),
+        cate_name: cate_name,
       };
       fetch("http://localhost:3000/products", {
         method: "POST",
@@ -73,6 +73,7 @@ document.getElementById("addpro1").onclick = function () {
     });
 };
 
+//xoa
 document.querySelector("tbody").addEventListener("click", function (e) {
   if (e.target.classList.contains("deleteButton")) {
     const id = e.target.dataset.id;
@@ -110,7 +111,7 @@ document.querySelector("tbody").addEventListener("click", function (e) {
               <label for="editProductImage">Ảnh:</label>
               <input type="file" id="editProductImage" value="${product.image}">
               <label for="editProductCategories">Danh mục:</label>
-              <input type="text" id="editProductCategories" value="${product.categories}">
+              <input type="text" id="editProductCategories" value="${product.cate_name}">
               <button id="saveEditProduct">Lưu</button>
             </div>
           </div>

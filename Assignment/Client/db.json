@@ -6,22 +6,10 @@
     },
     {
       "id": "3",
-      "name": "Áo thung"
-    },
-    {
-      "id": "4",
-      "name": "Đặng Đình Khiêm "
+      "name": "Fruit"
     }
   ],
   "products": [
-    {
-      "id": "2",
-      "name": "Súp Lơ",
-      "cate_id": 2,
-      "cate_name": "Vegetable",
-      "price": 15.5,
-      "image": "https://themewagon.github.io/fruitables/img/vegetable-item-2.jpg"
-    },
     {
       "id": "3",
       "name": "Cam",
@@ -29,14 +17,6 @@
       "cate_name": "Fruit",
       "price": 22.99,
       "image": "https://themewagon.github.io/fruitables/img/fruite-item-1.jpg"
-    },
-    {
-      "id": "4",
-      "name": "Ớt chuông",
-      "cate_id": 1,
-      "cate_name": "Vegetable",
-      "price": 9.99,
-      "image": "https://themewagon.github.io/fruitables/img/vegetable-item-4.jpg"
     },
     {
       "id": "5",
@@ -53,42 +33,6 @@
       "cate_name": "Vegetable",
       "price": 22.99,
       "image": "https://themewagon.github.io/fruitables/img/vegetable-item-1.jpg"
-    },
-    {
-      "id": "7",
-      "name": "Nho",
-      "cate_id": 1,
-      "cate_name": "Fruit",
-      "price": 9.99,
-      "image": "https://themewagon.github.io/fruitables/img/fruite-item-5.jpg"
-    },
-    {
-      "id": "8",
-      "name": "",
-      "price": null,
-      "image": "assets/img/gallery/",
-      "categories": ""
-    },
-    {
-      "id": "9",
-      "name": "Đặng Đình Khiêm ",
-      "price": 800000,
-      "image": "assets/img/gallery/",
-      "categories": "1"
-    },
-    {
-      "id": "10",
-      "name": "Áo thun",
-      "price": 700000,
-      "image": "assets/img/gallery/",
-      "categories": "1"
-    },
-    {
-      "id": "11",
-      "name": "Đặng Đình Khiêm ",
-      "price": 500000,
-      "image": "assets/img/gallery/Ảnh chụp màn hình 2024-01-12 111306.png",
-      "categories": "1"
     }
   ],
   "orders": [
