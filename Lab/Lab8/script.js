@@ -20,6 +20,8 @@ let editCategory = (idCategory)=>{
         console.log(categories);
         //field du lieu vao form
         document.querySelector('input[name="id"]').value= categories.id;
+        document.querySelector('input[name="name"]').value= categories.name;
+
     });
 
 };
